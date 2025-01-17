@@ -79,3 +79,20 @@ Programm::ProgrammMath::Vec Programm::ProgrammForce::pwrOfGrvtBtwnTwObj(Programm
 	auto vec_force_current = Programm::ProgrammMath::Vec::Normalization(vec_force);
 	return vec_force_current * modul_GrvtForce; 
 }
+
+//Methods Programm::Experiment
+void Programm::Experiment::toAddSpheres(Programm::ProgrammFigure::Sphere& Sphere)
+{
+	Spheres.push_back(Sphere);
+}
+
+void Programm::Experiment::toRunProgramm()
+{
+	bool statusProgramm = true;
+	auto start = std::chrono::high_resolution_clock::now();
+	while (statusProgramm) {
+
+	}
+	auto end = std::chrono::high_resolution_clock::now();
+	std::cout << std::chrono::duration<double>(end - start).count();
+}

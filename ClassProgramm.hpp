@@ -72,18 +72,8 @@ public:
 		Programm::Programm::ProgrammMath::Vec yMainVector = { 0.0, 1.0, 0.0 };
 		Programm::Programm::ProgrammMath::Vec zMainVector = { 0.0, 0.0, 1.0 };
 
-		void toAddSpheres(Programm::ProgrammFigure::Sphere& Sphere) {
-			Spheres.push_back(Sphere); 
-		}
+		void toAddSpheres(Programm::ProgrammFigure::Sphere& Sphere);
 
-		static void toRunProgramm() {
-			bool statusProgramm = true;
-			auto start = std::chrono::high_resolution_clock::now();
-			while (statusProgramm) {
-
-			}
-			auto end = std::chrono::high_resolution_clock::now();
-			std::cout << std::chrono::duration<double>(end - start).count();
-		}
+		void toRunProgramm();
 	};
 };
