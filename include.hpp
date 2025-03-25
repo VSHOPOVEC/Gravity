@@ -1,8 +1,8 @@
-#define Gravity_const 6.67e-11 
-#include <iostream>
-#include <functional>
-#include <vector>
-#include <cmath>
-#include <chrono>
-#include <stdexcept>
-#include <memory>
+#include<vector>
+#include<iostream>
+#include<string>
+#include<cmath>
+#include<exception>
+#include<thread>
+#include<functional>
+#include<memory>
